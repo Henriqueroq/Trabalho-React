@@ -57,3 +57,4 @@ Aqui é importante que as dependências bcryptjs e jsonwebtoken estejam instalad
 
 #### Implemente o middleware de proteção de rotas (src/middlewares/authMiddleware.ts)
 
+# Trabalho-React
