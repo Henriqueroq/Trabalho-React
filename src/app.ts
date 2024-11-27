@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 import superheroRoutes from './routes/superheroRoutes';
 import autheRoutes from './routes/admin/autheRoutes';
 
-dotenv.config();
+require('dotenv').config();
 
 const app: Application = express();
 
@@ -14,7 +14,7 @@ app.use('/api/superheroes', superheroRoutes);
 app.use('/api/', autheRoutes);
 
 const PORT = process.env.PORT || 3000;
-const MONGO_URI = process.env.MONGO_URI || '';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/trabalho-react';
 
 mongoose
   .connect(MONGO_URI, { 

@@ -5,6 +5,7 @@ import { validationResult } from 'express-validator';
 const service = new SuperheroService();
 
 export class SuperheroController {
+  
   async getAll(req: Request, res: Response): Promise<Response> {
     const superheroes = await service.getAllSuperheroes();
     return res.json(superheroes);
